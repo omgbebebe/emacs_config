@@ -47,11 +47,17 @@
 ;(global-set-key "\C-xgs" 'git-status)
 
 ;haskell
-;(load "/usr/share/emacs/site-lisp/haskell-mode/haskell-mode.el")
-;(add-hook ‘haskell-mode-hook ‘turn-on-haskell-doc-mode)
-;(add-hook ‘haskell-mode-hook ‘turn-on-haskell-indentation)
-;(add-hook ‘haskell-mode-hook ‘haskell-font-lock-symbols t)
-;(put ‘downcase-region ‘disabled nil)
+(add-to-list 'load-path "/usr/share/emacs/site-lisp/haskell-mode/")
+(load "/usr/share/emacs/site-lisp/haskell-mode/haskell-mode.el")
+(add-hook 'haskell-mode-hook 'turn-on-haskell-decl-scan)
+(add-hook 'haskell-mode-hook 'turn-on-haskell-doc-mode)
+(add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
+(add-hook 'haskell-mode-hook 'haskell-font-lock-symbols t)
+(set 'haskell-font-lock-symbols t)
+(put 'downcase-region 'disabled nil)
+;Yesod Hamlet mode
+(add-to-list 'load-path "~/.emacs.d/hamlet-mode/")
+(require 'hamlet-mode)
 
 ;django
 ;(load "~/.emacs.d/nxhtml/autostart.el")

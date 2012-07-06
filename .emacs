@@ -3,12 +3,12 @@
 (load-theme 'zenburn t)
 
 ;(load-file "~/.emacs.d/emacs-for-python/epy-init.el")
-(add-to-list 'load-path "~/.emacs.d/emacs-for-python/") ;; tell where to load the various files
- (require 'epy-setup) ;; It will setup other loads, it is required!
- (require 'epy-python) ;; If you want the python facilities [optional]
- (require 'epy-completion) ;; If you want the autocompletion settings [optional]
- (require 'epy-editing) ;; For configurations related to editing [optional]
- (require 'epy-bindings) ;; For my suggested keybindings [optional]
+;(add-to-list 'load-path "~/.emacs.d/emacs-for-python/") ;; tell where to load the various files
+; (require 'epy-setup) ;; It will setup other loads, it is required!
+; (require 'epy-python) ;; If you want the python facilities [optional]
+; (require 'epy-completion) ;; If you want the autocompletion settings [optional]
+; (require 'epy-editing) ;; For configurations related to editing [optional]
+; (require 'epy-bindings) ;; For my suggested keybindings [optional]
 
 (set-default-font "Consolas-14")
 (set-language-environment 'UTF-8)

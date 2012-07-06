@@ -22,7 +22,6 @@
 (setq haskell-font-lock-symbols t)
 ;;(add-hook 'haskell-mode-hook 'turn-on-haskell-indent)
 ;;(add-hook 'haskell-mode-hook 'turn-on-haskell-simple-indent)
->>>>>>> ergo
 
 (load "~/.emacs.d/commands.el")
 (global-set-key (kbd "M-I") 'iwb) ; Meta+Shift+i

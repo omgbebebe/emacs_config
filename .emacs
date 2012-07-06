@@ -13,43 +13,6 @@
 (load "~/.emacs.d/ergoemacs-keybindings-5.3.9/ergoemacs-mode")
 (ergoemacs-mode 1)
 
-
-<<<<<<< HEAD
-;(setenv "ERGOEMACS_KEYBOARD_LAYOUT" "us") ; US layout
-;; load ErgoEmacs keybinding
-;(load "~/.emacs.d/ergoemacs-keybindings/ergoemacs-mode")
-;; turn on minor mode ergoemacs-mode
-;(ergoemacs-mode 1)
-;
-; (add-to-list 'load-path "/usr/share/emacs/site-lisp/")
-; (require 'distel)
-; (distel-setup)
-
-;(add-to-list 'load-path "/usr/share/emacs/site-lisp/git")
-;(add-to-list 'vc-handled-backends 'GIT)
-;(autoload 'git-status "git" "Entry point into git-status mode." t)
-;(autoload 'git-blame-mode "git-blame"
-; "Minor mode for incremental blame for Git." t)
-
-;keybindindings for git
-;(global-set-key "\C-xgs" 'git-status)
-
-;haskell
-(add-to-list 'load-path "/usr/share/emacs/site-lisp/haskell-mode/")
-(load "/usr/share/emacs/site-lisp/haskell-mode/haskell-mode.el")
-(add-hook 'haskell-mode-hook 'turn-on-haskell-decl-scan)
-(add-hook 'haskell-mode-hook 'turn-on-haskell-doc-mode)
-(add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
-(add-hook 'haskell-mode-hook 'haskell-font-lock-symbols t)
-(set 'haskell-font-lock-symbols t)
-(put 'downcase-region 'disabled nil)
-;Yesod Hamlet mode
-(add-to-list 'load-path "~/.emacs.d/hamlet-mode/")
-(require 'hamlet-mode)
-
-;django
-;(load "~/.emacs.d/nxhtml/autostart.el")
-=======
 ;haskell
 (load "~/.emacs.d/haskell-mode/haskell-site-file")
 ;;(load "~/.emacs.d/haskell-mode/haskell-font-lock.el")

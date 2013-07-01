@@ -14,12 +14,21 @@
 (ergoemacs-mode 1)
 
 ;haskell
-(load "~/.emacs.d/haskell-mode/haskell-site-file")
-;;(load "~/.emacs.d/haskell-mode/haskell-font-lock.el")
+(add-to-list 'load-path "~/.emacs.d/haskell-mode/")
+(require 'haskell-mode-autoloads)
 (add-hook 'haskell-mode-hook 'turn-on-haskell-doc-mode)
 (add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
-(add-hook 'haskell-mode-hook 'turn-on-haskell-font-lock)
-(setq haskell-font-lock-symbols t)
+(require 'haskell-unicode-input-method)
+(add-hook 'haskell-mode-hook
+  (lambda () (set-input-method "haskell-unicode")))
+
+;(load "~/.emacs.d/haskell-mode/haskell-site-file")
+;;(load "~/.emacs.d/haskell-mode/haskell-font-lock.el")
+;(add-hook 'haskell-mode-hook 'turn-on-haskell-doc-mode)
+;(add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
+;(add-hook 'haskell-mode-hook 'turn-on-haskell-font-lock)
+;(setq haskell-font-lock-symbols t)
+
 ;;(add-hook 'haskell-mode-hook 'turn-on-haskell-indent)
 ;;(add-hook 'haskell-mode-hook 'turn-on-haskell-simple-indent)
 

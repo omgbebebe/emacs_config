@@ -9,10 +9,6 @@
 (setq default-input-method 'russian-computer)
 
 
-(setenv "ERGOEMACS_KEYBOARD_LAYOUT" "us") ; US
-(load "~/.emacs.d/ergoemacs-keybindings-5.3.9/ergoemacs-mode")
-(ergoemacs-mode 1)
-
 ;haskell
 (add-to-list 'load-path "~/.emacs.d/haskell-mode/")
 (require 'haskell-mode-autoloads)
